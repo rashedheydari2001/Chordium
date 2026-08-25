@@ -19,6 +19,8 @@
 
 ## 🛠️ Prerequisites & Dependencies
 
+First install pipx for your OS
+
 Make sure you have Python 3 and the required system packages installed on your Linux distribution before running Chordium.
 
 ### 1. Install System Dependencies (Ubuntu / Debian / Linux Mint)
@@ -34,7 +36,7 @@ sudo dnf install python3-gobject gtk4 gstreamer1-plugins-good gstreamer1-plugins
 
 ### 3. Install System Dependencies (Arch Linux)
 ```bash
-sudo pacman -S python-gobject gtk4 gst-plugins-good gst-plugins-bad
+sudo pacman -S python-gobject gtk4 gst-plugins-good gst-plugins-bad 
 ```
 
 ---
