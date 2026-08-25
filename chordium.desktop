@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Chordium
+Comment=A lightweight GTK4 music player built with Python and GStreamer
+Exec=chordium
+Icon=media-playback-start
+Terminal=false
+Categories=AudioVideo;Audio;Player;
+StartupNotify=true

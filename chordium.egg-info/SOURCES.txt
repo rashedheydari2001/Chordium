@@ -1,0 +1,9 @@
+Chordium.py
+LICENSE
+README.md
+pyproject.toml
+chordium.egg-info/PKG-INFO
+chordium.egg-info/SOURCES.txt
+chordium.egg-info/dependency_links.txt
+chordium.egg-info/entry_points.txt
+chordium.egg-info/top_level.txt
