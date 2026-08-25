@@ -51,7 +51,8 @@ sudo pacman -S python-gobject gtk4 gst-plugins-good gst-plugins-bad
 
 2. **Run the application:**
    ```bash
-   python3 main.py
+   chmod +x installer.sh
+   ./installer.sh
    ```
    *(Note: Replace `main.py` with your main script filename if it differs).*
 
