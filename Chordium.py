@@ -39,7 +39,7 @@ class MusicPlayerWindow(Gtk.ApplicationWindow):
     def __init__(self, app: Gtk.Application) -> None:
         super().__init__(
             application=app,
-            title="Python GTK4 Player",
+            title="Chordium",
             default_width=600,
             default_height=500,
         )
