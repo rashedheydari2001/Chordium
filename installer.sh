@@ -14,26 +14,6 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 # Step 1: Install System Dependencies (asks for password only if needed for package manager)
-echo "[+] Checking and installing system dependencies..."
-if command -v apt &>/dev/null; then
-  sudo apt update
-  sudo apt install -y python3-pip python3-gi python3-gi-cairo gir1.2-gtk-4.0 gir1.2-gst-1.0 gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly pipx desktop-file-utils
-
-elif command -v dnf &>/dev/null; then
-  sudo dnf install -y python3 python3-gobject gtk4 gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly-free pipx desktop-file-utils
-
-elif command -v pacman &>/dev/null; then
-  sudo pacman -Sy --noconfirm python python-gobject gtk4 gst-plugins-good gst-plugins-bad gst-plugins-ugly pipx desktop-file-utils
-
-elif command -v zypper &>/dev/null; then
-  sudo zypper refresh
-  sudo zypper install -y python3-gobject Gtk4 gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly pipx desktop-file-utils
-
-else
-  echo "[-] Unsupported package manager. Please ensure Python 3, GTK4, GStreamer, and pipx are installed."
-  exit 1
-fi
-
 # Step 2: Ensure pipx path is set up for the user
 echo "[+] Configuring pipx..."
 pipx ensurepath
