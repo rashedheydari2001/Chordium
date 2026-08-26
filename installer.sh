@@ -13,7 +13,6 @@ if [ "$EUID" -eq 0 ]; then
   exit 1
 fi
 
-# Step 1: Install System Dependencies (asks for password only if needed for package manager)
 # Step 2: Ensure pipx path is set up for the user
 echo "[+] Configuring pipx..."
 pipx ensurepath
